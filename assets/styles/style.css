@@ -1,0 +1,1057 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+:root{
+    --colorblue:rgba(61, 255, 255, 1);
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url(../fonts/satoshi/Satoshi-Black.woff) format("woff");
+    src: url(../fonts/satoshi/Satoshi-Black.woff2) format("woff2");
+    src: url(../fonts/satoshi/Satoshi-Black.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Satoshi-Bold";
+    src: url(../fonts/satoshi/Satoshi-Bold.woff) format("woff");
+    src: url(../fonts/satoshi/Satoshi-Bold.woff2) format("woff2");
+    src: url(../fonts/satoshi/Satoshi-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Satoshi-Light";
+    src: url(../fonts/satoshi/Satoshi-Light.woff) format("woff");
+    src: url(../fonts/satoshi/Satoshi-Light.woff2) format("woff2");
+    src: url(../fonts/satoshi/Satoshi-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Satoshi-Medium";
+    src: url(../fonts/satoshi/Satoshi-Medium.woff) format("woff");
+    src: url(../fonts/satoshi/Satoshi-Medium.woff2) format("woff2");
+    src: url(../fonts/satoshi/Satoshi-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Satoshi-Regular";
+    src: url(../fonts/satoshi/Satoshi-Regular.woff) format("woff");
+    src: url(../fonts/satoshi/Satoshi-Regular.woff2) format("woff2");
+    src: url(../fonts/satoshi/Satoshi-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url(../fonts/ClashDisplay-Variable.woff);
+}
+
+@font-face {
+    font-family: "ClashDisplay-Regular";
+    src: url(../fonts/ClashDisplay/ClashDisplay-Regular.woff) format("woff");
+    src: url(../fonts/ClashDisplay/ClashDisplay-Regular.woff2) format("woff2");
+    src: url(../fonts/ClashDisplay/ClashDisplay-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "ClashDisplay-Medium";
+    src: url(../fonts/ClashDisplay/ClashDisplay-Medium.woff) format("woff");
+    src: url(../fonts/ClashDisplay/ClashDisplay-Medium.woff2) format("woff2");
+    src: url(../fonts/ClashDisplay/ClashDisplay-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "ClashDisplay-Bold";
+    src: url(../fonts/ClashDisplay/ClashDisplay-Bold.woff) format("woff");
+    src: url(../fonts/ClashDisplay/ClashDisplay-Bold.woff2) format("woff2");
+    src: url(../fonts/ClashDisplay/ClashDisplay-Bold.ttf) format("truetype");
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+}
+::-webkit-scrollbar-track{
+    background-color: #080A06;
+}
+
+
+body{
+    background-color: #F6F6F6;
+}
+
+.container{
+    max-width: 1415px!important;
+}
+
+/* Homepage Start */
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+.image-home{
+    background-image: url(../images/bg/background-01.png);
+    width: 100%;
+    height: 1558px;
+    background-position:top center;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    z-index: -1;
+}
+
+ .image-overlay{
+    width: 100%;
+    height: 1558px;
+    background: radial-gradient(90.27% 90.27% at 50% 9.73%, rgba(92, 87, 65, 0) 0%, #41585C 100%);
+    mix-blend-mode: multiply;
+    z-index: 1;
+    position: absolute;
+    background-position: top center;
+}
+
+.image-overlay2{
+    width: 100%;
+    height: 1558px;
+    background: linear-gradient(180deg, rgba(92, 87, 65, 0) 46.98%, #5C5741 85.11%);
+    mix-blend-mode: multiply;
+    z-index: 2;
+    position: absolute;
+    background-position: top center;
+}
+
+.image-overlay3{
+    width: 100%;
+    height: 1558px;
+    background: radial-gradient(90.27% 90.27% at 50% 9.73%, rgba(92, 87, 65, 0) 0%, #5C5741 100%);
+    mix-blend-mode: multiply;
+    z-index: 3;
+    position: absolute;
+    background-position: top center;
+}  
+
+.logo{
+    height: 24.71px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.navbar a{
+    font-family: "Satoshi-Bold";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    text-decoration: none;
+    color: white;
+    padding: 0px 40px 0px 40px;
+    z-index: 1;
+}
+
+.navbar a:hover{
+    color: var(--colorblue);
+    transition: 0.3s ease;
+}
+
+.btn-custom a{
+    width: 173px;
+    height: 50px;
+    border-radius: 51px;
+    background-color: var(--colorblue);
+    color: black;
+    z-index: 1;
+    font-family: "Satoshi-Bold";
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn-custom a:hover{
+    background-color:#080A06;
+    color: var(--colorblue);
+    border:1px solid var(--colorblue);
+    transition: 0.3ease;
+}
+
+.homepage .content{
+    margin-top: -1200px;
+}
+
+.homepage .content h1{
+    font-family: 'Clash Display';
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 100%;
+    color: white;
+    z-index: 10;
+    text-align: center;
+}
+
+/* Homepage End */
+
+/* Second Page Start */
+.s-page{
+    height: 1300px;
+    margin-top: 855px;
+    background: linear-gradient(180deg, #080A06 43.75%, rgba(8, 10, 6, 0.130208) 81.53%, rgba(8, 10, 6, 0) 93.47%);
+}
+
+.s-page .image img{
+    position: absolute;
+    width: 49.5%;
+    margin-left: -8px;
+    margin-top: 40px;
+}
+
+.s-page-content .title{
+   font-family: "ClashDisplay-Regular";
+   font-size: 40px;
+   font-weight: 500;
+   color: white;
+   letter-spacing: 0.06em;
+   line-height: 120%;
+}
+
+.s-page .s-page-subtext p{
+    font-family: 'Satoshi-Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 150%;
+    color: white;
+}
+
+.s-page-left{
+    margin-top: 110px;
+}
+
+/* Second Page End */
+
+/* Third Page Start */
+.third-page{
+    margin-top: -230px;
+}
+
+.third-page .title h2{
+    font-family: "ClashDisplay-Medium";
+    font-weight: 500;
+    font-size: 52px;
+    color: #080A06;
+}
+
+.third-page .image{
+    background-image: url(../images/bike-02.png);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 498px;
+}
+
+.third-page .content .col-custom .title{
+    margin-top: -482px;
+}
+
+.third-page .content .col-custom1 .title{
+    margin-top: -487px;
+}
+
+.third-page .content .col-custom .list2{
+    margin-top: -9px;
+}
+
+.third-page .content .col-custom1 .list2{
+    margin-top: -6px;
+}
+
+.third-page .content .col-custom .title .list3{
+    margin-top: 166px;
+}
+
+.third-page .content .col-custom1 .title .list3{
+    margin-top: 160px;
+}
+
+.third-page .content .col-custom1 .title li,
+.third-page .content .col-custom .title li{
+    font-family: "Satoshi-Medium";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.third-page .content .col-custom1 .title li{
+    margin-right: 40px;
+}
+
+.third-page .content .col-custom .subtext{
+    margin-top: -490px;
+    margin-left: 25px;
+    width: 250px;
+}
+
+.third-page .content .col-custom1 .subtext{
+    margin-top: -490px;
+    margin-left: 505px;
+    width: 160px;
+}
+
+.third-page .content .col-custom .text2{
+    margin-top: -38px;
+}
+
+.third-page .content .col-custom .text3{
+    margin-top: -32px;
+}
+
+.third-page .content .col-custom1 .text2{
+    margin-top: -5px;
+}
+
+.third-page .content .col-custom1 .subtext li,
+.third-page .content .col-custom .subtext li{
+    list-style: none;
+    font-family: "Satoshi-Regular";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.5px;
+}
+
+.third-page .content .col-custom1 li,
+.third-page .content .col-custom li{
+    margin-bottom: 150px;
+    list-style-image: url(../images/shapes/list-style.svg);
+}
+
+.third-page .content .col-custom1 .title li{
+    text-align: right;
+}
+
+/* Third Page End */
+
+/* Fourth Page Start */
+.fourth-page{
+    margin-top: 200px;
+    background-image: url(../images/bg/background-02.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 1187px;
+}
+
+.fourth-page .title h1{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 120%;
+    color: white;
+    text-align: center;
+}
+
+.fourth-page .logo img{
+    margin-bottom: 75px;
+}
+
+/* Fourth Page End */
+
+/* Features Area Start */
+.background{
+    margin-top: -610px;
+    background: linear-gradient(180deg, #080A06 43.75%, rgba(8, 10, 6, 0.130208) 81.53%, rgba(8, 10, 6, 0) 93.47%);
+    transform: rotate(-180deg);
+    width: 100%;
+    height: 1080px;
+}
+
+.features {
+    position: relative;
+    margin-top: -100px;
+    width: 100%;
+    height: 1080px;
+    background: linear-gradient(180deg, #080A06 43.75%, rgba(8, 10, 6, 0.130208) 81.53%, rgba(8, 10, 6, 0) 93.47%);
+    z-index: 1;
+}
+
+.features{
+    margin-top: -350px;
+}
+
+.features h2{
+    font-family: 'ClashDisplay-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    color: white;
+}
+
+.features .content{
+    width: 210px;
+    margin-left: 30px;
+}
+
+.features .content h5{
+    margin-top: -70px;
+    font-family: 'Satoshi-Light';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    width: 180px;
+    color: white;
+}
+
+.features .content .ft-1,
+.features .content .ft-5{
+    width: 150px;
+}
+
+.features .content .ft-content{
+    width: 132px;
+}
+
+.features .content p{
+    position: absolute;
+    margin-top: 35px;
+    width: 210px;
+    font-family: 'Satoshi-Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: white;
+}
+
+/* Features Area End */
+
+/* Review Area Start */
+.review-bg{
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    margin-top: -800px;
+    background: linear-gradient(180deg, #080A06 43.75%, rgba(8, 10, 6, 0.130208) 81.53%, rgba(8, 10, 6, 0) 93.47%);
+}
+
+.review{
+    margin-top: -250px;
+  
+    /* background-color: #F5F5F5; */
+}
+
+.review .title h2{
+    width: 765px;
+    font-family: 'ClashDisplay-Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    color: #080A06;
+}
+
+.review .content p{
+    width: 641px;
+    font-family: 'Satoshi-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 150%;
+}
+
+.review .video .image{
+    width: 683px;
+    height: 397px;
+}
+
+
+.review .video .image img{
+    width: 100%;
+    margin-top: 80px;
+    object-fit: cover;
+}
+
+/* Review Area End */
+
+/* Footer Area Start */
+.footer{
+    position: relative;
+    width: 100%;
+    height: 894px;
+    background-image: url(../images/bg/background-03.png);
+    background-position:bottom center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+.footer-bg{
+    position: absolute;
+    width: 100%;
+    height: 598px;
+    background: linear-gradient(180deg, #F6F6F6 43.75%, rgba(255, 255, 255, 0) 93.47%);
+    z-index: -1;
+}
+
+.container-footer{
+    margin-top: -705px;
+    height: 400px;
+}
+
+.container-footer .title h1{
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 120%;
+    color: #080A06;
+    text-align: center;
+}
+
+.container-footer .btn-custom a{
+    width: 310px;
+    height: 50px;
+}
+
+/* Footer Area End */
+
+/* Responsive Area Start */
+@media(max-width:1440px) {
+    .container-footer{
+        margin-top: -570px;
+    }
+}
+@media(max-width:1399px){
+    .container{
+        max-width: 1140px!important;
+    }
+    .header-wrapper .logo img{
+        height: 1.3rem;
+    }
+    .navbar{
+        margin-top: 20px!important;
+    }
+    .navbar a{
+        font-size: 16px
+    }
+    .btn-custom a{
+        height: 40px;
+        font-size: 14px;
+    }
+    .image-overlay,
+    .image-overlay2,
+    .image-overlay3{
+        height: 1157px;
+    }
+    .homepage .content h1{
+        margin-top: -100px;
+        font-size: 96px;
+    }
+    .s-page{
+        margin-top: 514px;
+    }
+    .s-page-content .title{
+        font-size: 32px;
+    }
+    .s-page .s-page-subtext p{
+        font-size: 18px;
+    }
+    .third-page .title h2{
+        font-size: 36px;
+    }
+    .third-page .content .col-custom1 .title li,
+    .third-page .content .col-custom .title li{
+        font-size: 16px;
+    }
+    .third-page .content .col-custom1 .subtext li,
+    .third-page .content .col-custom .subtext li{
+        font-size: 11px;
+    }
+    .third-page .content .col-custom .subtext{
+        width: 180px;
+    }
+    .third-page .content .col-custom .list2{
+        margin-top: -30px;
+    }
+    .third-page .content .col-custom .title .list3{
+        margin-top: -12px;
+    }
+    .third-page .content .col-custom .subtext{
+        margin-top: -431px;
+    }
+    .third-page .content .col-custom .text2{
+        margin-top: -70px;
+    }
+    .third-page .content .col-custom .text3{
+        margin-top: -69px;
+    }
+    .third-page .content .col-custom1 .subtext{
+        margin-top: -428px;
+        margin-left: 345px;
+        width: 180px;
+    }
+    .third-page .content .col-custom1 .text2{
+        margin-top: -45px;
+    }
+    .third-page .content .col-custom1 .text3{
+        margin-top: -38px;
+    }
+    .third-page .content .col-custom1 .list2{
+        margin-top: -28px;
+    }
+    .third-page .content .col-custom1 .title .list3{
+        margin-top: -16px;
+    }
+    .fourth-page .logo img{
+        margin-bottom: 115px;
+    }
+    .fourth-page .title h1{
+        font-size: 56px;
+    }
+    .features h2{
+        font-size: 36px;
+    }
+    .features .content{
+        margin-left: -80px;
+    }
+    .features .content h5{
+        font-size: 22px;
+    }
+    .review .title h2{
+        font-size: 36px;
+        width: 480px;
+    }
+    .review .content p{
+        font-size: 14px;
+        width: 480px;
+    }
+    .review .wetried img{
+        height: 4rem;
+    }
+    .container-footer .title h1{
+        font-size: 56px;
+    }
+    .container-footer .logo img{
+        height: 2rem;
+    }
+    .container-footer .btn-custom a{
+        width: 260px;
+        height: 50px;
+    }
+}
+@media(max-width:1024px){
+    .container{
+        width: 960px;
+    }
+    .header-wrapper .logo img{
+        height: 1rem;
+    }
+    .navbar a{
+        font-size: 14px;
+        padding: 0px 25px 0px 25px;
+    }
+    .btn-custom a{
+        width: 142px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .homepage .content h1{
+        font-size: 64px;
+        margin-top: -120px;
+    }
+    .homepage .content{
+        margin-top: -1260px;
+    }
+    .homepage .content img{
+        height: 1.4rem;
+        margin-left: -30px;
+    }
+    .image-overlay,
+    .image-overlay2,
+    .image-overlay3{
+        height: 849px;
+    }
+    .s-page{
+        margin-top: 462px;
+    }
+    .s-page-left .logo img{
+        height: 2rem;
+    }
+    .s-page-content .title{
+        font-size: 24px
+    }
+    .s-page .s-page-subtext p{
+        font-size: 15px;
+    }
+    .s-page .image img{
+        margin-top: 100px;
+    }
+    .third-page .title h2{
+        font-size: 28px;
+    }
+    .third-page .content .col-custom1 .title li,
+    .third-page .content .col-custom .title li{
+        font-size: 14px;
+    }
+    .third-page .content .col-custom1 .subtext li,
+    .third-page .content .col-custom .subtext li{
+        font-size: 10px;
+    }
+    .third-page .content .col-custom .title{
+        margin-top: -485px;
+    }
+    .third-page .content .col-custom .subtext{
+        width: 160px;
+    }
+    .third-page .content .col-custom .title .list3{
+        margin-top: -35px;
+    }
+    .third-page .content .col-custom .list2{
+        margin-top: -52px;
+    }
+    .third-page .content .col-custom .subtext{
+        margin-top: -385px;
+    }
+    .third-page .content .col-custom .text2{
+        margin-top: -90px;
+    }
+    .third-page .content .col-custom .text3{
+        margin-top: -99px;
+    }
+    .third-page .content .col-custom1 .subtext{
+        margin-top: -384px;
+        margin-left: 310px;
+        width: 140px;
+    }
+    .third-page .content .col-custom1 .list2{
+        margin-top: -50px;
+    }
+    .third-page .content .col-custom1 .title .list3{
+        margin-top: -37px;
+    }
+    .third-page .content .col-custom1 .text2{
+        margin-top: -70px;
+    }
+    .third-page .content .col-custom1 .text3{
+        margin-top: -59px;
+    }
+    .fourth-page{
+        margin-top: 0;
+    }
+    .fourth-page .logo img{
+        height: 2rem;
+        margin-bottom: 210px;
+    }
+    .fourth-page .title h1{
+        font-size: 48px;
+        margin-top: -80px;
+    }
+    .features h2{
+        font-size: 28px;
+    }
+    .container-mobile .image img{
+        height: 8rem;
+    }
+    .features .content h5{
+        font-size: 16px;
+    }
+    .features .content p{
+        font-size: 12px;
+    }
+    .features .content{
+        margin-top: 50px;
+    }
+    .features .content p{
+        margin-top: 20px;
+    }
+    .review .title h2{
+        font-size: 32px;
+    }
+    .review .content p{
+        font-size: 12px;
+        width: 405px;
+    }
+    .review .wetried img{
+        height: 3rem;
+    }
+    .review .video .image img{
+        margin-top: 60px;
+    }
+    .container-footer {
+        margin-top: -465px;
+    }
+    
+    .container-footer .title h1{
+        font-size: 48px
+    }
+    .container-footer .btn-custom a{
+        width: 220px;
+        height: 40px;
+    }
+    .footer{
+        height: 598px;
+    }
+}
+
+@media(max-width:820px){
+    .container{
+        width: 720px;
+    }
+    .header-wrapper .logo img{
+        height: 0.8rem;
+    }
+    .navbar a{
+        font-size: 12px;
+        padding:  0px 15px 0px 15px;
+    }
+    .btn-custom a{
+        width: 120px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .homepage .content h1{
+        font-size: 48px;
+        margin-top: -180px;
+    }
+    .homepage .content img{
+        height: 1rem;
+        margin-top: -80px;
+    }
+    .image-overlay,
+    .image-overlay2,
+    .image-overlay3{
+        height: 680px;
+    }
+    .s-page{
+        margin-top: 310px;
+    }
+    .s-page-left .logo img{
+        height: 1.8rem;
+    }
+    .s-page-content .title{
+        font-size: 20px;
+    }
+    .s-page .s-page-subtext p{
+        font-size: 12px;
+    }
+    .third-page .title h2{
+        font-size: 24px;
+    }
+    .third-page .content .col-custom1 .title li,
+    .third-page .content .col-custom .title li{
+        font-size: 12px;
+    }
+    .third-page .content .col-custom1 .subtext li,
+    .third-page .content .col-custom .subtext li{
+        font-size: 8px;
+        font-weight: 500;
+        line-height: 12px;
+    }
+    .third-page .content .col-custom .title{
+        margin-top: -492px;
+    }
+    .third-page .content .col-custom .list2{
+        margin-top: -78px;
+    }
+    .third-page .content .col-custom .title .list3{
+        margin-top: -68px;
+    }
+    .third-page .content .col-custom .subtext{
+        margin-top: -325px;
+        margin-left: 15px;
+        width: 126px;
+    }
+    .third-page .content .col-custom .text2{
+        margin-top: -98px;
+    }
+    .third-page .content .col-custom .text3{
+        margin-top: -100px;
+    }
+    .third-page .content .col-custom1 .title {
+        margin-top: -490px;
+    }
+    .third-page .content .col-custom1 .list2 {
+        margin-top: -80px;
+    }
+    .third-page .content .col-custom1 .title .list3 {
+        margin-top: -72px;
+    }
+    .third-page .content .col-custom1 .subtext {
+        margin-top: -320px;
+        margin-left: 210px;
+        width: 126px;
+    }
+    .third-page .content .col-custom1 .text2 {
+        margin-top: -85px;
+    }
+    .third-page .content .col-custom1 .text3 {
+        margin-top: -78px;
+    }
+    .fourth-page .logo img{
+        height: 1.5rem;
+        margin-bottom: 185px;
+    }
+    .fourth-page .title h1{
+        font-size: 36px;
+        margin-top: -100px;
+    }
+    .features h2{
+        font-size: 22px;
+    }
+    .features .content h5{
+        font-size: 14px;
+    }
+    .features .content p{
+        font-size: 10px;
+        margin-top: 20px;
+        width: 160px;
+    }
+    .features .content{
+        margin-left: 65px;
+    }
+    .review .title h2{
+        font-size: 24px;
+        width: 320px;
+    }
+    .review .content p{
+        font-size: 10px;
+        width: 300px;
+    }
+    .review .wetried img{
+        height: 2rem;
+    }
+    .review .video .image img {
+        margin-top: 70px;
+    }
+    .container-footer{
+        margin-top: -415px;
+    }
+    .container-footer .logo img{
+        height: 1.5rem;
+    }
+    .container-footer .title h1{
+        font-size: 36px;
+    }
+    .container-footer .btn-custom a{
+        width: 180px;
+        height: 35px;
+    }
+    .s-page{
+        height: 950px;
+    }
+}
+
+@media(max-width:768px){
+    .container-footer {
+        margin-top: -400px;
+    }
+}
+
+@media(max-width:767px){
+    .features .content {
+        margin-left: -375px;
+    }
+}
+
+@media(max-width:500px){
+    .container{
+        width: 375px;
+    }
+    .navbar{
+        display: none;
+    }
+    .third-page{
+        display: none;
+    }
+    .image-overlay,
+    .image-overlay2,
+    .image-overlay3{
+        height: 405px;
+    }
+    .s-page{
+        margin-top: 35px;
+        height: 615px;
+    }
+    .header-wrapper .logo img{
+        height: 0.6rem;
+    }
+    .btn-custom a{
+        width: 90px;
+        height: 25px;
+        font-size: 9px;
+    }
+    .homepage .content h1{
+        font-size: 28px;
+        margin-top: -350px;
+    }
+    .homepage .content img{
+        margin-top: -345px;
+        margin-left: -18px;
+        height: 0.6rem;
+    }
+    .s-page-left .logo img{
+        height: 1rem;
+    }
+    .s-page-content .title{
+        font-size: 13px;
+    }
+    .s-page .image img{
+        width: 48.5%;
+        margin-top: 128px;
+    }
+    .s-page-content .title{
+        width: 146px;
+    }
+    .s-page .s-page-subtext p{
+        font-size: 10px;
+        width: 195px;
+    }
+    .fourth-page .logo img{
+        height: 1.2rem;
+    }
+    .fourth-page .title h1{
+        font-size: 28px;
+        width: 355px;
+    }
+    .features{
+        height: 1400px;
+    }
+    .features h2{
+        font-size: 18px;
+    }
+    .features .content{
+        margin-left: 65px;
+    }
+    .review{
+        margin-top:-365px;
+    }
+    .container-footer .logo img{
+        height: 1rem;
+    }
+    .container-footer .title h1{
+        font-size: 24px;
+    }
+    .footer-bg{
+        margin-top: 198px;
+        height: 400px;
+    }
+    .container-footer .logo{
+        margin-bottom: 10px!important;
+    }
+    .container-footer .title{
+        margin-bottom: 10px!important;
+    }
+    .container-footer {
+        margin-top: -225px;
+        height: 200px;
+    }
+}
+/* Responsive Area End */
