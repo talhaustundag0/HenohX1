@@ -1054,4 +1054,8 @@ body{
         height: 200px;
     }
 }
+
+@media(max-width:414px){
+    
+}
 /* Responsive Area End */
