@@ -113,7 +113,7 @@ body{
     height: 1558px;
     background: radial-gradient(90.27% 90.27% at 50% 9.73%, rgba(92, 87, 65, 0) 0%, #41585C 100%);
     mix-blend-mode: multiply;
-    z-index: 1;
+    z-index: 3;
     position: absolute;
     background-position: top center;
 }
@@ -123,7 +123,7 @@ body{
     height: 1558px;
     background: linear-gradient(180deg, rgba(92, 87, 65, 0) 46.98%, #5C5741 85.11%);
     mix-blend-mode: multiply;
-    z-index: 2;
+    z-index: 1;
     position: absolute;
     background-position: top center;
 }
@@ -133,7 +133,7 @@ body{
     height: 1558px;
     background: radial-gradient(90.27% 90.27% at 50% 9.73%, rgba(92, 87, 65, 0) 0%, #5C5741 100%);
     mix-blend-mode: multiply;
-    z-index: 3;
+    z-index: 2;
     position: absolute;
     background-position: top center;
 }  
@@ -183,6 +183,10 @@ body{
 
 .homepage .content{
     margin-top: -1200px;
+}
+
+.homepage .content img{
+    margin-left: -25px;
 }
 
 .homepage .content h1{
@@ -1056,6 +1060,6 @@ body{
 }
 
 @media(max-width:414px){
-    
+
 }
 /* Responsive Area End */
